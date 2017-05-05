@@ -1,0 +1,6 @@
+Data.fs*
+./bin
+./lib*
+./include
+pip-selfcheck.json
+__pycache__

@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>This is Plone</title>
+
+    <meta name="description" content="Talk @ PyDays Vienna, 2017-05-05">
+    <meta name="author" content="Johannes Raggam, programmatic">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./html/bower_components/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="./html/reveal_simple.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="./html/bower_components/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="./html/custom.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './html/bower_components/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="./html/bower_components/reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- LEAFLET -->
+  </head>
+
+  <body>
+    <!--
+blue
+#0083BE
+green
+#0BD52D
+yellow
+#CBBE00
+red
+#CB4B0A
+#ED0200
+#0B934A
+#B35725
+#7E231D
+
+        colors:
+        https://kuler.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=4&name=My%20Kuler%20Theme&mode=rgb&rgbvalues=0.7950980392156863,0.21951409859249027,0,0.5686743281526693,0.018820642827770902,0.8350980392156863,0,0.5137254901960784,0.7450980392156863,0.14597107605243181,0.8350980392156863,0.04175490196078435,0.7950980392156863,0.5971390297864673,0.03975490196078435&swatchOrder=0,1,2,3,4
+
+        main slide title
+          <h1></h1>
+
+        slide title
+          <h2></h2>
+
+        subtitle
+          <h3></h3>
+
+        paragraph
+          <p></p>
+
+          <blockquote>
+          </blockquote>
+        -->
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section class="cover" data-background="blue">
+          <h1>This is Plone</h1>
+          <h3>Johannes Raggam<br/>@ PyDays Vienna, 2017-05-05</h3>
+        </section>
+
+        <section data-background="green">
+          <section class="cover">
+            <h2>Who am I</h2>
+          </section>
+          <!-- section class="fullscreen" data-background-iframe="./html/map.html"></section-->
+          <section>
+            <p>Johannes Raggam</p>
+            <p>Graz / Austria</p>
+            <p>Plone CMS Core Developer</p>
+            <p><a href="https://github.com/thet" target="_blank">https://github.com/thet</a></p>
+            <p><a href="https://twitter.com/thetetet" target="_blank">https://twitter.com/thetetet</a></p>
+            <p><a href="http://programmatic.pro/" target="_blank">http://programmatic.pro</a></p>
+          </section>
+        </section>
+
+
+        <section data-background="blue">
+          <section class="cover">
+            <h2>
+Plone the CMS
+            </h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+Enterprise Content Management System
+              </li>
+              <li>
+Open Source
+              </li>
+              <li>
+Around since 2001
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+Written in Python
+              </li>
+              <li>
+Based on the Zope Application Server
+              </li>
+              <li>
+Using the ZODB - Zope Object DataBase
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+Excellent security record
+              </li>
+            </ul>
+          </section>
+          <section>
+            <img src="./html/imgs/sicherheitsluecken_cms_w.svg" alt=""/>
+          </section>
+          <section>
+            <img src="./html/imgs/sicherheitsluecken_frameworks_w.svg" alt=""/>
+          </section>
+          <section>
+            <ul>
+              <li>
+Great usability
+              </li>
+              <li>
+Super flexible workflow system
+              </li>
+              <li>
+Hierarchical content organization
+              </li>
+              <li>
+In-Place editing
+              </li>
+            </ul>
+          </section>
+
+          <section class="cover">
+            <h2>Editing</h2>
+          </section>
+          <section class="fullscreen" data-background-video="./html/demo/video2-edit.mp4"></section>
+
+          <section class="cover">
+            <h2>Workflow, Sharing, Settings</h2>
+          </section>
+          <section class="fullscreen" data-background-video="./html/demo/video4-workflow-properties.mp4"></section>
+
+        </section>
+
+        <section data-background="yellow">
+          <section class="cover">
+            <h2>
+Who uses Plone
+            </h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+Architekturstiftung Österreich
+              </li>
+              <li>
+Niederösterreich Kultur
+              </li>
+              <li>
+Porsche Informatik
+              </li>
+              <li>
+Schweitzer Bankenverband
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+TU Munich
+              </li>
+              <li>
+eGov Solution for Swiss communities
+              </li>
+              <li>
+Amnesty International
+              </li>
+              <li>
+Clean Clothes
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+FBI / USA
+              </li>
+              <li>
+CIA / USA
+              </li>
+              <li>
+NASA / USA
+              </li>
+              <li>
+Brazilian Goverment
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section data-background="blue">
+          <section class="cover">
+            <h2>
+Plone the Framework
+            </h2>
+          </section>
+          <section>
+            <h2>
+ZODB
+            </h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+Zope Object DataBase
+              </li>
+              <li>
+Python Pickles
+              </li>
+              <li>
+BTrees Storage
+              </li>
+              <li>
+Dict API
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+ACID compliant
+              </li>
+              <li>
+Transactional
+              </li>
+              <li>
+Multiple clients via ZEO
+              </li>
+              <li>
+Replications via ZRS
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+"NoSQL"
+              </li>
+              <li>
+Indexing via other packages
+              </li>
+              <li>
+Follow up: NewtDB
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>
+ZCA - Zope Component Architecture
+            </h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+Implements GOF Design Patterns
+              </li>
+              <li>
+Interfaces
+              </li>
+              <li>
+Adapters
+              </li>
+              <li>
+Utilities
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+Component registry
+              </li>
+              <li>
+Event emitters / subscribers
+              </li>
+              <li>
+Exchangeable components
+              </li>
+              <li>
+Improves code reuse
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>
+JavaScript / CSS
+            </h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+RequireJS
+              </li>
+              <li>
+LESS
+              </li>
+              <li>
+Compilable TTW
+              </li>
+              <li>
+Grunt
+              </li>
+              <li>
+Potential canditates for replacement
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section data-background="green">
+          <section class="cover">
+            <h2>
+Future Of Plone
+            </h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+Zope 4
+              </li>
+              <li>
+Python 3
+              </li>
+              <li>
+Webpack
+              </li>
+              <li>
+ReactJS
+              </li>
+              <li>
+SASS
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>
+plone.restapi
+            </h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+Restful API
+              </li>
+              <li>
+JSON-LD
+              </li>
+              <li>
+HYDRA
+              </li>
+              <li>
+High strategical importance
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+Angular 2+ SDK
+              </li>
+              <li>
+Endpoints provided by plone.restapi 
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+React UI
+              </li>
+              <li>
+Endpoints provided by plone.restapi 
+              </li>
+            </ul>
+          </section>
+          <section class="cover">
+            <h2>
+Guillotina
+            </h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+New web Framework
+              </li>
+              <li>
+Borrowing Concepts from Plone and ZCA
+              </li>
+              <li>
+Python 3
+              </li>
+              <li>
+asyncio + aiohttp
+              </li>
+              <li>
+Plus: compatible with plone.restapi
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>
+All is very exciting
+            </h2>
+          </section>
+
+          <section class="cover">
+            <h2>React UI Mosaic editor</h2>
+          </section>
+          <section class="fullscreen" data-background-video="./html/demo/video-reactjs-mosaic.mp4"></section>
+
+
+
+        </section>
+
+        <section data-background="yellow">
+          <section class="cover">
+            <h2>
+Community and Organization
+            </h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+Plone Foundation
+              </li>
+              <li>
+Plone Teams
+              </li>
+              <li>
+400+ Core contributors
+              </li>
+              <li>
+500+ Developers
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+Plone Conference
+              </li>
+              <li>
+Plone Symposium
+              </li>
+              <li>
+Sprints
+              </li>
+            </ul>
+          </section>
+
+          <section class="fullscreen" data-background-image="./html/imgs/plone-conf-2014-group-photo.jpg"></section>
+
+
+        </section>
+
+        <section data-background="#333333">
+          <h1>Thank You!</h1>
+        </section>
+
+        <section data-background="green">
+          <h1>Questions?</h1>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="./html/bower_components/reveal.js/lib/js/head.min.js"></script>
+    <script src="./html/bower_components/reveal.js/js/reveal.js"></script>
+    <script src="./html/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./html/init.js"></script>
+  </body>
+/html>

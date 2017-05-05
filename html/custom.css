@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
+
+body {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+.reveal a {
+    color: white;
+    text-decoration: underline;
+}
+section[data-background="yellow"],
+section[data-background="yellow"] a {
+    color: black;
+}
+
+.slides {
+    background-image: url('./imgs/programmatic-logo-w-200.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.cover h1, .cover h2 {
+    text-align: right;
+}
+.cover h3, .cover p {
+    text-align: left;
+}
+
+.top { top: 2em; }
+.reveal h2 { margin-bottom: 1em; }
+.reveal h3 { margin-bottom: 1em; }
+
+.reveal li,
+.reveal .huge li {
+    text-align: center;
+    font-size: 2.11em;
+    list-style: none;
+    margin: 0 0 0.8em 0;
+}
+
+iframe {
+    margin: 0;
+    border: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.reveal section img {
+     border: none;
+     box-shadow: none;
+     background: none;
+}
+
+
+/* PROGRESS */
+.reveal .progress { background: transparent; height: 5px; }
+.reveal .progress span { background: green; }
+/* NAVIGATION */
+.reveal .controls div.navigate-left { border-right-color: grey; }
+.reveal .controls div.navigate-right { border-left-color: grey; }
+.reveal .controls div.navigate-up { border-bottom-color: grey; }
+.reveal .controls div.navigate-down { border-top-color: grey; }
+.reveal .controls div.navigate-left.enabled { border-right-color: white; }
+.reveal .controls div.navigate-right.enabled { border-left-color: white; }
+.reveal .controls div.navigate-up.enabled { border-bottom-color: white; }
+.reveal .controls div.navigate-down.enabled { border-top-color: white; }
+.reveal .controls div.navigate-left.enabled:hover { border-right-color: black; }
+.reveal .controls div.navigate-right.enabled:hover { border-left-color: black; }
+.reveal .controls div.navigate-up.enabled:hover { border-bottom-color: black; }
+.reveal .controls div.navigate-down.enabled:hover { border-top-color: black; }
+
+
